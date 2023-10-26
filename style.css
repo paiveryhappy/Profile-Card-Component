@@ -9,7 +9,9 @@
     border-radius: 10px;
     font-family: 'Fraunces', serif;
     font-family: 'Kumbh Sans', sans-serif;
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+     
 }
 
 p, span {
@@ -29,13 +31,6 @@ p, span {
     border-radius: 10px 10px 0 0;
 }
 
-body {
-    background-image: url(images/bg-pattern-bottom.svg);
-    background-image: url(images/bg-pattern-top.svg);
-    background-repeat: repeat;
-    background-size: cover;
-}
-
 .profile {
     border-radius: 50%;
     border-color: white;
@@ -46,4 +41,23 @@ body {
 
 h4 {
     margin-top: 60px;
+}
+
+.pattern-top {
+    z-index: -1;
+    position: absolute;
+    top: -560px;
+    left: -280px;
+  }
+
+.pattern-bottom {
+    z-index: -1;
+    position: absolute;
+    bottom: -560px;
+    right: -280px;
+  }
+
+  body {
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
 }
